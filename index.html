@@ -1,43 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Pobitra Kundu - Musician</title>
+<title>Pobitra Kundu | Musician</title>
 
 <style>
+
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family: Arial, sans-serif;
+background:#f5f5f5;
 }
 
+/* Header */
 header{
-background:#222;
+background:linear-gradient(90deg,#1e3c72,#2a5298);
 color:white;
-padding:30px;
 text-align:center;
+padding:60px 20px;
 }
 
+header h1{
+font-size:45px;
+margin:10px;
+}
+
+header p{
+font-size:20px;
+}
+
+/* Navigation */
+nav{
+background:#111;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00d9ff;
+}
+
+/* Sections */
 section{
-padding:20px;
-margin:20px;
+padding:40px;
+margin:30px;
 background:white;
-border-radius:8px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery{
+text-align:center;
 }
 
 .gallery img{
-width:200px;
+width:250px;
 margin:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Fees box */
+.fees{
+background:#2a5298;
+color:white;
+padding:20px;
 border-radius:10px;
 }
 
+/* Footer */
 footer{
-background:#222;
+background:#111;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -47,12 +93,20 @@ padding:15px;
 <p>Professional Sitarist & Music Teacher</p>
 </header>
 
-<section>
+<nav>
+<a href="#about">About</a>
+<a href="#instruments">Instruments</a>
+<a href="#fees">Fees</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
 <h2>About the Musician</h2>
-<p>Pobitra Kundu is a professional musician with 15 years of experience and 5 years of teaching experience. He is mainly a sitarist and has secured 1st position in National Kala Utsav and Railway music competitions. He has also performed in the Dover Lane Music Conference competition and is currently studying at Rabindra Bharati University.</p>
+<p>Pobitra Kundu is a professional musician with more than 15 years of experience in music and 5 years of teaching experience. He is mainly a sitarist and has secured 1st position in National Kala Utsav and Railway competitions. He has also performed at the Dover Lane Music Conference and is currently studying at Rabindra Bharati University.</p>
 </section>
 
-<section>
+<section id="instruments">
 <h2>Instruments Played</h2>
 <ul>
 <li>Sitar</li>
@@ -64,7 +118,7 @@ padding:15px;
 </ul>
 </section>
 
-<section>
+<section id="fees" class="fees">
 <h2>Music Class Fees</h2>
 <p>Sitar Classes – ₹500 per class</p>
 <p>Tabla Classes – ₹300 per class</p>
@@ -72,20 +126,28 @@ padding:15px;
 <p>Guitar Classes – ₹400 per class</p>
 </section>
 
-<section>
+<section id="gallery">
 <h2>Photo Gallery</h2>
+
 <div class="gallery">
 <img src="photo1.jpg">
 <img src="photo2.jpg">
 <img src="photo3.jpg">
 </div>
+
 </section>
 
-<section>
+<section id="contact">
 <h2>Contact</h2>
-<p>Phone: 7003747511</p>
-<p>Facebook: https://www.facebook.com/share/1GftFWm261/</p>
-<p>Instagram: https://www.instagram.com/notes.and.beats</p>
+
+<p><b>Phone:</b> 7003747511</p>
+
+<p><b>Facebook:</b><br>
+https://www.facebook.com/share/1GftFWm261/</p>
+
+<p><b>Instagram:</b><br>
+https://www.instagram.com/notes.and.beats</p>
+
 </section>
 
 <footer>
